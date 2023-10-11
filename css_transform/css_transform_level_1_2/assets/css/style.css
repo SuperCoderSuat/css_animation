@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    color: #fff;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+section>div {
+    width: 400px;
+}
+
+section div>div {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+section div>div:nth-of-type(2), section div>div:nth-of-type(5) {
+    margin-inline: 25px;
+}
+
+section div>div:nth-of-type(1), section div>div:nth-of-type(2), section div>div:nth-of-type(3) {
+    margin-bottom: 25px;
+}
+
+section div>div {
+    position: relative;
+}
+
+section div>div>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section div>div:nth-of-type(1):hover {
+    transform: translate(20px, 20px);
+}
+
+section div>div:nth-of-type(2):hover {
+    transform: translateX(-20px);
+}
+
+section div>div:nth-of-type(3):hover {
+    transform: translateY(20px);
+}
+
+section div>div:nth-of-type(4):hover {
+    transform: rotate(40deg);
+}
+
+section div>div:nth-of-type(5):hover {
+    transform: scale(1.5);
+}
+
+section div>div:nth-of-type(6):hover {
+    transform: skew(20deg,10deg);
+}
+

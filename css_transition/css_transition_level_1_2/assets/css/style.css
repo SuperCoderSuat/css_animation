@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+section {
+    position: relative;
+    height: 60vh;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+section div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 1%;
+    transition: 1s;
+}
+
+section div:nth-of-type(1) {
+    background-color: red;
+}
+
+section div:nth-of-type(2) {
+    background-color: green;
+    top: 47.5%;
+    transition-delay: 1s;
+}
+
+section:hover div:nth-of-type(1) {
+    left: 90%;
+}
+
+section:hover div:nth-of-type(2) {
+    transition-delay: 1s;
+    left: 90%;
+}

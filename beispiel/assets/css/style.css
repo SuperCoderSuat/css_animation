@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+/* div {
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+} */
+
+/* div:hover {
+    width: 300px;
+    color: whitesmoke;
+    background-color: lightcoral;
+} */
+
+/*  Transition  */
+
+/* div:nth-of-type(1) {
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+}
+
+div:nth-of-type(2) {
+    transition-timing-function: ease;
+    transition-duration: 2s;
+}
+
+div:nth-of-type(3) {
+    transition-timing-function: ease-out;
+    transition-duration: 2s;
+}
+
+div:nth-of-type(4) {
+    transition-timing-function: ease-in;
+    transition-duration: 2s;
+}
+
+div:nth-of-type(5) {
+    transition-timing-function: ease-in-out;
+    transition-duration: 2s;
+    transition: all 5s linear 0.2s;
+} */
+
+/*  Transform   */
+
+/* div:nth-of-type(1) {
+    transform: skew(20deg);
+    transform: skewX(30deg);
+    transform: skewY(50deg);
+} */
+
+/* div:nth-of-type(2) {
+    transform: scale(2);
+    transform: scaleX(2);
+    transform: scaleY(1);
+} */
+
+/* div:nth-of-type(3) {
+    transform: translate(20px, 200px);
+    transform: translateX(50px) translateY(20px);
+    transform: translateY(5px);
+} */
+
+/* div:nth-of-type(4) {
+    transform: rotate(30deg);
+    transform-origin: bottom left;
+}
+
+div:nth-of-type(5) {
+    transition: width ease-in 0.5s, transform 0.25s ease-out;
+}
+
+div:nth-of-type(5):hover {
+    transform: translate(20px, 20px);
+} */
+
+/*  Animations  */
+
+.rainbow {
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    animation-name: rainbow;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes rainbow {
+
+    0% {
+        background-color: green;
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        background-color: violet;
+        transform: translate(200px, 0px);
+        border-radius: 50%;
+    }
+
+    50% {
+        background-color: black;
+        transform: translate(200px, 200px);
+    }
+
+    75% {
+        background-color: red;
+        transform: translate(0px, 200px);
+        
+    }
+
+    100% {
+        background-color: yellow;
+        transform: translate(0px, 0px);
+    }
+
+}
